@@ -2,7 +2,7 @@ package MSIE::MenuExt;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 require Exporter;
 use base qw(Exporter);

@@ -17,6 +17,7 @@ is($reg->content(), catfile("t/01.reg"));
 sub catfile {
     my $file = shift;
     open FILE, $file;
+    binmode FILE; # for Win32
     my $content = do { local $/; <FILE>; };
     close FILE;
     return $content;
